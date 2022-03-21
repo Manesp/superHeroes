@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    position:static;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Reboto", sans-serif;
+}
+
+#descuentos {
+    background-color: #1CD1B0;
+    font-size: 15px;
+    height: auto;
+    margin: 0;
+}
+
+header .title{
+    background-color: #00669F;
+    font-size: 40px;
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+}
+
+footer {
+    display: flex;
+    background-color: #00669F;
+    color: white;
+    text-align: left;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin-left: 5px;
+}
+
+footer img {
+    position: absolute;
+    right: 25px;
+    width: 100px;
+}
+
+.perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 150px;
+    position:absolute;
+    left: calc(50% - (125px / 2));
+    top: calc(194px - (125px / 2));
+}
+
+section article {
+    position: relative;
+    background: #f3f3f3;
+    width: 300px;
+    margin: 100px 0;
+    text-align: center;
+    height: 550px;
+}
+
+section article div i {
+    color: red
+}
+
+section article.batman{
+    order: -4;
+  }
+  section article.wonder{
+    order: -3;
+  }
+  section article.super{
+    order: -2;
+  }
+  section article.harley{
+    order: 0;
+  }
+  
+
+article div.bg-HeaderCard {
+    padding: 10px;
+    width: 100%;
+    height: 194px;
+    border-radius: 16px 16px 0 0;
+    text-align: left;
+  }
+
+section div.bg-HeaderCard.batmanBackground{
+    background-image: url(../img/batmanBackground.png);
+    background-size: cover;
+}
+
+section div.bg-HeaderCard.harleyBackground{
+    background-image: url(../img/harleyBackground.png);
+    background-size: cover;
+}
+
+section div.bg-HeaderCard.supermanBackground{
+    background-image: url(../img/supermanBackground.png);
+    background-size: cover;
+}
+
+section div.bg-HeaderCard.wonderBackground{
+    background-image: url(../img/bg-wonderWoman.png);
+    background-size: cover;
+}
+
+section article h3 {
+    text-transform: uppercase;
+    margin-top: 45px;
+    margin-bottom: 0;
+}
+
+section article button {
+    width: 128.78px;
+    height: 48.52px;
+    background-color: #00669F;
+    color: white;
+    position: absolute;
+    bottom: 10px; 
+    left: 30%;
+}
+
+section article p {
+    padding:15px;
+    margin: 0px 10px 5px 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    height: 750px;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+
+}
+
+@media (max-width: 1250px) {
+
+    html{
+      font-size: 18px;
+    }
+    
+    section {
+        height: 1900px;
+    }
+
+    section article{
+  
+      width: 35%;
+    }
+  }
+
+@media (max-width: 730px) {
+
+    section{
+        height: 900px;
+    }
+
+    section article{
+      width: 70%;
+    }
+  
+    section article.harley{
+      display: none;
+    }
+  
+  
+    footer{
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    footer img{
+      margin-top: 10px;
+      position: static;
+    }
+  
+  
+}
+  
